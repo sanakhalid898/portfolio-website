@@ -3,7 +3,7 @@ export const experiences = [
     title: "Lead Data Scientist",
     badge: "Promoted",
     company: "The Global Consortium of Political Analysts",
-    companyShort: "Global Consortium of Political Analysts",
+    companyShort: "The Global Consortium of Political Analysts",
     location: "United States",
     date: "Sep 2025 – Present",
     isCurrent: true,
@@ -11,25 +11,25 @@ export const experiences = [
     initials: "GC",
     logoColor: "#6366F1",
     bullets: [
-      "Architected and optimized Azure Data Factory pipelines processing multi-regional datasets, implementing automated data quality frameworks with anomaly detection models to increase reliability 25%",
-      "Enhanced decision-making efficiency 40% by building automated Power BI and Tableau dashboards delivering real-time performance KPIs",
-      "Reduced reporting time 30% by designing scalable ETL architecture and governance frameworks across datasets"
+      "Lead a team of 5 data scientists; technical lead on a parallel cross-functional initiative",
+      "Shipped automated Power BI and Tableau dashboards, cutting decision turnaround ~40%",
+      "Designed governance frameworks across distributed datasets, reducing reporting time ~30%"
     ]
   },
   {
     title: "Data Scientist (Capstone)",
     company: "Dell Technologies Inc.",
-    companyShort: "Dell Technologies",
+    companyShort: "Dell Technologies Inc.",
     location: "Seattle, WA",
     date: "Apr 2025 – June 2025",
     logo: "https://logo.clearbit.com/dell.com",
     initials: null,
     logoColor: null,
     bullets: [
-      "Built multi-agent AI trading system processing datasets from 20+ publicly traded companies, delivering real-time insights for investment decision-making in transaction environments using MySQL",
-      "Orchestrated automated ETL pipelines with Airflow, accelerating strategy testing by integrating market signals for senior leadership",
-      "Minimized analysis time by 60% by designing conversational AI interface processing millions of data points",
-      "Developed agentic AI workflows combining LLM reasoning (LangChain + Gemini API) with reinforcement learning policies to automate market decision-making"
+      "Built a multi-agent AI trading simulator processing data from 20+ publicly traded companies",
+      "Developed agentic workflows combining LLM reasoning (LangChain + Gemini) with reinforcement learning policies",
+      "Shipped a conversational AI interface over millions of data points, cutting analysis time ~60%",
+      "Orchestrated Airflow ETL pipelines integrating live market signals for faster strategy testing"
     ]
   },
   {
@@ -42,10 +42,11 @@ export const experiences = [
     initials: "DE",
     logoColor: "#F59E0B",
     bullets: [
-      "Delivered $500K+ revenue impact by leading company-wide analytics strategy, unifying data engineering, modeling, and visualization efforts to drive investment due-diligence decisions",
-      "Reduced analytics delivery time 50% by architecting automated Power BI and Tableau pipelines and implementing enterprise-wide data-governance frameworks",
-      "Increased user engagement 40% by deploying ML-driven behavioral segmentation and campaign optimization for Diakob's market-research clients",
-      "Led cross-functional teams across engineering, and marketing to operationalize predictive models and translate analytical insights into growth strategies"
+      "Co-founded the company and built the analytics function from the ground up, scaling it into a core capability across finance, investment, healthcare, consumer, and tech engagements",
+      "Led company-wide data strategy spanning engineering, modeling, and visualization, setting the technical direction and hiring roadmap for the analytics team",
+      "Architected automated Power BI and Tableau pipelines with enterprise-wide governance frameworks, cutting analytics delivery time ~50% and standardizing reporting across client engagements",
+      "Designed ML-driven behavioral segmentation and campaign optimization for market-research clients, lifting user engagement ~40% and informing investment due-diligence decisions",
+      "Led cross-functional teams across engineering, marketing, and client delivery to translate analytical insights into growth strategy and measurable business outcomes"
     ]
   },
   {
@@ -58,9 +59,9 @@ export const experiences = [
     initials: null,
     logoColor: null,
     bullets: [
-      "Designed and executed large-scale A/B testing framework across 18,000 SMEs, applying causal inference methods (DiD, logistic regression) to optimize behavioral interventions",
-      "Built data pipelines in Python and SQL to process and analyze multi-source datasets, automating data collection and quality validation workflows",
-      "Conducted cohort analysis and segmentation delivering econometric insights that informed tax policy decisions for government authorities"
+      "Designed and analyzed A/B-tested behavioral SMS interventions across 18,000 SMEs in partnership with KPRA and FCDO SEED to improve tax compliance",
+      "Applied logistic regression and difference-in-differences models to quantify treatment effects and identify high-impact message types",
+      "Delivered econometric insights informing revenue policy and behavioral design for tax authorities"
     ]
   },
   {
@@ -73,8 +74,9 @@ export const experiences = [
     initials: null,
     logoColor: null,
     bullets: [
-      "Enabled multi-province expansion strategy for sustainable housing startup through statistical modeling, trend identification, and demand forecasting using Python and SQL",
-      "Optimized supply chain decisions for B2B e-commerce marketplace through statistical forecasting models and inventory optimization"
+      "Built a multi-province expansion strategy, prioritizing top 3 segments by ROI across 5 provinces",
+      "Developed demand forecasting and inventory optimization across 50+ SKUs, reducing simulated stockout exposure ~15%",
+      "Ran 6 growth scenarios to inform supply chain and financing decisions"
     ]
   },
   {
@@ -98,10 +100,10 @@ export const projects = [
   {
     title: "Multi-Agent AI Trading Platform",
     tagline: "Autonomous Investment Intelligence",
-    tags: ["LangChain", "Gemini API", "Reinforcement Learning", "MySQL"],
+    tags: ["LangChain", "Agentic AI", "Reinforcement Learning", "MySQL"],
     link: "https://medium.com/@sanak.khalid/simulating-smarter-investing-a-multi-agent-finance-platform-f40799b60aa6",
     github: "https://github.com/sanakhalid898/multi-agent-portfolio-recommender",
-    desc: "Engineered a Python-based algorithmic trading simulation using multi-agent architectures to synthesize market signals across 20+ publicly traded equities. Deployed autonomous AI agents capable of continuous backtesting and executing reinforcement learning policies for real-time investment decision-making."
+    desc: "Built a multi-agent AI system processing data from 20+ publicly traded companies, combining LangChain agentic workflows with reinforcement learning policies. Delivered real-time investment insights through a conversational AI interface backed by automated ETL pipelines."
   },
   {
     title: "Customer Lifetime Value Optimization",
@@ -109,7 +111,7 @@ export const projects = [
     tags: ["Predictive Modeling", "RFM Analysis", "Segmentation"],
     link: "https://medium.com/@sanak.khalid/uncorking-insights-data-driven-customer-segmentation-and-retention-strategy-for-a-u-s-winery-430582d1f1ff",
     github: null,
-    desc: "Increased customer retention by 67.6% for high-value segments and improved marketing ROI by 40% by developing predictive churn models and RFM analysis, optimizing channel strategy across geographic markets."
+    desc: "Developed predictive churn models and RFM analysis for a U.S. winery, boosting retention 67.6% for high-value segments and improving marketing ROI by 40% through optimized channel strategy."
   },
   {
     title: "Global Digital Marketing Intelligence",
@@ -117,7 +119,7 @@ export const projects = [
     tags: ["Power BI", "Tableau", "ETL", "API Integration"],
     link: "https://medium.com/@sanak.khalid/uncovering-global-digital-marketing-trends-for-strategic-platform-optimization-9bf2ec8ce1ce",
     github: null,
-    desc: "Designed end-to-end automated ETL workflows pulling cross-platform API data to track multi-regional marketing performance. Built dynamic Power BI and Tableau dashboards delivering real-time KPI visibility and strategic platform optimization insights for global campaigns."
+    desc: "Designed automated ETL workflows pulling cross-platform API data to track multi-regional marketing performance. Built Power BI and Tableau dashboards delivering real-time KPI visibility for global campaign optimization."
   },
   {
     title: "Music Preferences & Mental Wellness",
@@ -125,7 +127,7 @@ export const projects = [
     tags: ["Unsupervised Learning", "Clustering", "Behavioral Data"],
     link: "https://medium.com/@sanak.khalid/the-sound-of-wellness-analyzing-the-link-between-music-preferences-and-mental-health-c229c0e926c7",
     github: null,
-    desc: "Built dynamic data pipelines correlating behavioral audio data with mental well-being metrics. Employed unsupervised learning and clustering techniques to identify psychographic segments and uncover latent therapeutic patterns, bridging data science with behavioral health research."
+    desc: "Applied unsupervised learning and clustering to correlate behavioral audio data with mental well-being metrics, identifying psychographic segments and latent therapeutic patterns across listener groups."
   },
   {
     title: "Permit Success Prediction Engine",
@@ -133,7 +135,7 @@ export const projects = [
     tags: ["Classification", "Geospatial Data", "Feature Engineering"],
     link: "https://medium.com/@sanak.khalid/predicting-permit-success-a-machine-learning-approach-to-lottery-optimization-88e1c9eb4862",
     github: null,
-    desc: "Built supervised learning models to uncover optimization strategies within lottery-based permit systems. Processed historical geospatial and demographic datasets to construct robust classification pipelines that forecast permit success probabilities with actionable precision."
+    desc: "Built classification models on historical geospatial and demographic data to forecast permit success probabilities within lottery-based systems, surfacing actionable optimization strategies."
   },
   {
     title: "Health Insurance Market Research",
@@ -141,7 +143,7 @@ export const projects = [
     tags: ["A/B Testing", "Conjoint Analysis", "Market Segmentation"],
     link: "https://medium.com/@sanak.khalid/mapping-employer-preferences-in-health-insurance-a-quantitative-market-research-study-73c5f2203e98",
     github: null,
-    desc: "Executed a large-scale A/B testing and market segmentation framework to analyze corporate healthcare purchasing decisions. Applied advanced statistical modeling to map employer preferences, delivering strategic insights that informed competitive positioning in the group insurance market."
+    desc: "Ran A/B testing and conjoint analysis to map corporate healthcare purchasing preferences across employer segments, delivering insights that informed competitive positioning in the group insurance market."
   },
   {
     title: "Rafhan Maize Co. Ltd — Valuation & Risk Analysis",
@@ -149,7 +151,7 @@ export const projects = [
     tags: ["DCF Modeling", "Risk Analysis", "Corporate Finance", "Valuation"],
     link: null,
     github: null,
-    desc: "Performed comprehensive financial valuation of Rafhan Maize Products Co. Ltd using discounted cash flow modeling and scenario analysis. Quantified key risk factors and assessed intrinsic equity value to support data-driven investment decision-making."
+    desc: "Conducted DCF valuation and scenario analysis of Rafhan Maize Products Co. Ltd, quantifying key risk factors and assessing intrinsic equity value to inform investment decision-making."
   },
   {
     title: "Maersk End-to-End Logistics",
@@ -157,7 +159,7 @@ export const projects = [
     tags: ["Supply Chain", "Operations Analysis", "Logistics Strategy"],
     link: null,
     github: null,
-    desc: "Analyzed Maersk's end-to-end logistics operations to identify supply chain bottlenecks and operational inefficiencies. Developed data-driven optimization recommendations targeting cost reduction and measurable improvements in delivery performance."
+    desc: "Analyzed Maersk's end-to-end logistics operations to identify supply chain bottlenecks, developing optimization recommendations targeting cost reduction and improved delivery performance."
   }
 ];
 
@@ -199,7 +201,7 @@ export const skillCategories = [
   {
     title: "Machine Learning & Statistics",
     color: "purple",
-    skills: ['Predictive Modeling', 'A/B Testing', 'Time Series Forecasting', 'Supervised Learning', 'Unsupervised Learning', 'Reinforcement Learning', 'Statistical Analysis']
+    skills: ['Predictive Modeling', 'A/B Testing', 'Time Series Forecasting', 'Supervised Learning', 'Unsupervised Learning', 'Reinforcement Learning', 'Agentic AI', 'Statistical Analysis']
   }
 ];
 
