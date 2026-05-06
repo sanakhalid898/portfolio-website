@@ -4,7 +4,7 @@ export const experiences = [
     badge: "Promoted",
     company: "The Global Consortium of Political Analysts",
     companyShort: "Global Consortium of Political Analysts",
-    location: "Remote",
+    location: "United States",
     date: "Sep 2025 – Present",
     isCurrent: true,
     logo: null,
@@ -44,7 +44,7 @@ export const experiences = [
     bullets: [
       "Delivered $500K+ revenue impact by leading company-wide analytics strategy, unifying data engineering, modeling, and visualization efforts to drive investment due-diligence decisions",
       "Reduced analytics delivery time 50% by architecting automated Power BI and Tableau pipelines and implementing enterprise-wide data-governance frameworks",
-      "Increased user engagement 40% by deploying ML-driven behavioral segmentation and campaign optimization for Diakob’s market-research clients",
+      "Increased user engagement 40% by deploying ML-driven behavioral segmentation and campaign optimization for Diakob's market-research clients",
       "Led cross-functional teams across engineering, and marketing to operationalize predictive models and translate analytical insights into growth strategies"
     ]
   },
@@ -66,7 +66,7 @@ export const experiences = [
   {
     title: "Associate Consultant (Pro Bono)",
     company: "LUMS Consultancy Group",
-    companyShort: "LCG",
+    companyShort: "LUMS Consultancy Group",
     location: "Pakistan",
     date: "Aug 2020 – Nov 2021",
     logo: "https://logo.clearbit.com/lums.edu.pk",
@@ -78,18 +78,18 @@ export const experiences = [
     ]
   },
   {
-    title: "Intern",
+    title: "Junior Research Analyst",
     company: "Insights Driven Research",
-    companyShort: "Insights Driven",
+    companyShort: "Insights Driven Research",
     location: "Pakistan",
     date: "June 2021 – Aug 2021",
     logo: null,
     initials: "ID",
     logoColor: "#10B981",
     bullets: [
-      "Assisted in data collection and cleaning for market research projects, ensuring data integrity for downstream analysis.",
-      "Performed exploratory data analysis to identify trends in consumer behavior for client reports.",
-      "Supported the development of visualization dashboards to communicate research findings effectively."
+      "Assisted in data collection and cleaning for market research projects, ensuring data integrity for downstream analysis",
+      "Performed exploratory data analysis to identify trends in consumer behavior for client reports",
+      "Supported the development of visualization dashboards to communicate research findings effectively"
     ]
   }
 ];
@@ -100,6 +100,7 @@ export const projects = [
     tagline: "Autonomous Investment Intelligence",
     tags: ["LangChain", "Gemini API", "Reinforcement Learning", "MySQL"],
     link: "https://medium.com/@sanak.khalid/simulating-smarter-investing-a-multi-agent-finance-platform-f40799b60aa6",
+    github: "https://github.com/sanakhalid898/multi-agent-portfolio-recommender",
     desc: "Engineered a Python-based algorithmic trading simulation using multi-agent architectures to synthesize market signals across 20+ publicly traded equities. Deployed autonomous AI agents capable of continuous backtesting and executing reinforcement learning policies for real-time investment decision-making."
   },
   {
@@ -107,6 +108,7 @@ export const projects = [
     tagline: "Retention Strategy for a U.S. Winery",
     tags: ["Predictive Modeling", "RFM Analysis", "Segmentation"],
     link: "https://medium.com/@sanak.khalid/uncorking-insights-data-driven-customer-segmentation-and-retention-strategy-for-a-u-s-winery-430582d1f1ff",
+    github: null,
     desc: "Increased customer retention by 67.6% for high-value segments and improved marketing ROI by 40% by developing predictive churn models and RFM analysis, optimizing channel strategy across geographic markets."
   },
   {
@@ -114,7 +116,48 @@ export const projects = [
     tagline: "Cross-Platform Analytics & Dashboarding",
     tags: ["Power BI", "Tableau", "ETL", "API Integration"],
     link: "https://medium.com/@sanak.khalid/uncovering-global-digital-marketing-trends-for-strategic-platform-optimization-9bf2ec8ce1ce",
+    github: null,
     desc: "Designed end-to-end automated ETL workflows pulling cross-platform API data to track multi-regional marketing performance. Built dynamic Power BI and Tableau dashboards delivering real-time KPI visibility and strategic platform optimization insights for global campaigns."
+  },
+  {
+    title: "Music Preferences & Mental Wellness",
+    tagline: "Behavioral Analytics & Clustering",
+    tags: ["Unsupervised Learning", "Clustering", "Behavioral Data"],
+    link: "https://medium.com/@sanak.khalid/the-sound-of-wellness-analyzing-the-link-between-music-preferences-and-mental-health-c229c0e926c7",
+    github: null,
+    desc: "Built dynamic data pipelines correlating behavioral audio data with mental well-being metrics. Employed unsupervised learning and clustering techniques to identify psychographic segments and uncover latent therapeutic patterns, bridging data science with behavioral health research."
+  },
+  {
+    title: "Permit Success Prediction Engine",
+    tagline: "Machine Learning for Lottery Optimization",
+    tags: ["Classification", "Geospatial Data", "Feature Engineering"],
+    link: "https://medium.com/@sanak.khalid/predicting-permit-success-a-machine-learning-approach-to-lottery-optimization-88e1c9eb4862",
+    github: null,
+    desc: "Built supervised learning models to uncover optimization strategies within lottery-based permit systems. Processed historical geospatial and demographic datasets to construct robust classification pipelines that forecast permit success probabilities with actionable precision."
+  },
+  {
+    title: "Health Insurance Market Research",
+    tagline: "Quantitative Employer Preference Mapping",
+    tags: ["A/B Testing", "Conjoint Analysis", "Market Segmentation"],
+    link: "https://medium.com/@sanak.khalid/mapping-employer-preferences-in-health-insurance-a-quantitative-market-research-study-73c5f2203e98",
+    github: null,
+    desc: "Executed a large-scale A/B testing and market segmentation framework to analyze corporate healthcare purchasing decisions. Applied advanced statistical modeling to map employer preferences, delivering strategic insights that informed competitive positioning in the group insurance market."
+  },
+  {
+    title: "Rafhan Maize Co. Ltd — Valuation & Risk Analysis",
+    tagline: "Financial Valuation & Risk Modeling",
+    tags: ["DCF Modeling", "Risk Analysis", "Corporate Finance", "Valuation"],
+    link: null,
+    github: null,
+    desc: "Performed comprehensive financial valuation of Rafhan Maize Products Co. Ltd using discounted cash flow modeling and scenario analysis. Quantified key risk factors and assessed intrinsic equity value to support data-driven investment decision-making."
+  },
+  {
+    title: "Maersk End-to-End Logistics",
+    tagline: "Supply Chain Optimization",
+    tags: ["Supply Chain", "Operations Analysis", "Logistics Strategy"],
+    link: null,
+    github: null,
+    desc: "Analyzed Maersk's end-to-end logistics operations to identify supply chain bottlenecks and operational inefficiencies. Developed data-driven optimization recommendations targeting cost reduction and measurable improvements in delivery performance."
   }
 ];
 
@@ -127,25 +170,18 @@ export const research = [
     desc: "Conducted rigorous econometric analysis using causal inference frameworks (Difference-in-Differences) to quantify the real-world impact of minimum wage increases on total employer compensation. Extracted actionable insights revealing how employers re-balance benefits in response to wage policy shifts."
   },
   {
-    title: "Permit Success Prediction Engine",
-    tagline: "Machine Learning for Lottery Optimization",
-    tags: ["Classification", "Geospatial Data", "Feature Engineering"],
-    link: "https://medium.com/@sanak.khalid/predicting-permit-success-a-machine-learning-approach-to-lottery-optimization-88e1c9eb4862",
-    desc: "Built supervised learning models to uncover optimization strategies within lottery-based permit systems. Processed historical geospatial and demographic datasets to construct robust classification pipelines that forecast permit success probabilities with actionable precision."
+    title: "Virtual Reality & Mental Health",
+    tagline: "Technology & Therapeutic Outcomes",
+    tags: ["VR Technology", "Mental Health", "Clinical Research", "Behavioral Analysis"],
+    link: null,
+    desc: "Investigated the therapeutic applications of virtual reality in mental health treatment, synthesizing clinical research on VR-based interventions for anxiety and stress-related conditions to assess clinical efficacy and adoption barriers."
   },
   {
-    title: "Health Insurance Market Research",
-    tagline: "Quantitative Employer Preference Mapping",
-    tags: ["A/B Testing", "Conjoint Analysis", "Market Segmentation"],
-    link: "https://medium.com/@sanak.khalid/mapping-employer-preferences-in-health-insurance-a-quantitative-market-research-study-73c5f2203e98",
-    desc: "Executed a large-scale A/B testing and market segmentation framework to analyze corporate healthcare purchasing decisions. Applied advanced statistical modeling to map employer preferences, delivering strategic insights that informed competitive positioning in the group insurance market."
-  },
-  {
-    title: "Music Preferences & Mental Wellness",
-    tagline: "Behavioral Analytics & Clustering",
-    tags: ["Unsupervised Learning", "Clustering", "Behavioral Data"],
-    link: "https://medium.com/@sanak.khalid/the-sound-of-wellness-analyzing-the-link-between-music-preferences-and-mental-health-c229c0e926c7",
-    desc: "Built dynamic data pipelines correlating behavioral audio data with mental well-being metrics. Employed unsupervised learning and clustering techniques to identify psychographic segments and uncover latent therapeutic patterns, bridging data science with behavioral health research."
+    title: "Tax Policy — RCT Study",
+    tagline: "Causal Inference on Tax Compliance",
+    tags: ["RCT", "Tax Policy", "Causal Inference", "Behavioral Economics"],
+    link: null,
+    desc: "Designed and analyzed a randomized controlled trial examining behavioral responses to tax policy interventions. Applied experimental econometrics to measure causal effects on compliance behavior and economic decision-making patterns across treatment and control groups."
   }
 ];
 
