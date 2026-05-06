@@ -272,9 +272,18 @@ function App() {
                       <div className="w-2 h-2 rounded-full bg-brand-green animate-pulse"></div>
                       <span className="text-xs font-mono text-text-tertiary dark:text-gray-500 uppercase tracking-wider">Status: Online</span>
                     </div>
-                    <a href={projects[activeProject].link} target="_blank" rel="noreferrer" className="text-sm font-bold text-[#0a0a0a] dark:text-black bg-brand-green px-5 py-2.5 rounded-xl hover:bg-[#00e676] flex items-center gap-2 transition-all hover:-translate-y-0.5 shadow-lg shadow-brand-green/20">
-                      View Project <ExternalLink size={18} />
-                    </a>
+                    <div className="flex items-center gap-3">
+                      {projects[activeProject].github && (
+                        <a href={projects[activeProject].github} target="_blank" rel="noreferrer" className="text-sm font-bold text-text-secondary dark:text-text-dark-secondary bg-white dark:bg-zinc-900 border border-border-light dark:border-zinc-700 px-5 py-2.5 rounded-xl hover:border-brand-green hover:text-brand-green flex items-center gap-2 transition-all hover:-translate-y-0.5">
+                          <FaGithub size={16} /> GitHub
+                        </a>
+                      )}
+                      {projects[activeProject].link && (
+                        <a href={projects[activeProject].link} target="_blank" rel="noreferrer" className="text-sm font-bold text-[#0a0a0a] dark:text-black bg-brand-green px-5 py-2.5 rounded-xl hover:bg-[#00e676] flex items-center gap-2 transition-all hover:-translate-y-0.5 shadow-lg shadow-brand-green/20">
+                          View Project <ExternalLink size={18} />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -289,8 +298,11 @@ function App() {
             Analytical research and deep-dives spanning econometrics, machine learning, and behavioral science — all published on Medium.
           </p>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
-            {research.map((r, i) => (
-              <a key={i} href={r.link} target="_blank" rel="noreferrer"
+            {research.map((r, i) => {
+              const Wrapper = r.link ? 'a' : 'div';
+              const wrapperProps = r.link ? { href: r.link, target: '_blank', rel: 'noreferrer' } : {};
+              return (
+              <Wrapper key={i} {...wrapperProps}
                 className="group relative flex flex-col bg-white dark:bg-[#0d1117] rounded-2xl border border-border-light dark:border-brand-green/15 p-6 hover:border-brand-green/40 hover:shadow-xl hover:shadow-brand-green/8 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
                 <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-brand-green/20 group-hover:bg-brand-green transition-colors duration-300 rounded-l-2xl"></div>
 
@@ -298,7 +310,7 @@ function App() {
                   <span className="text-[9px] font-mono font-bold text-brand-green/70 tracking-[0.2em] uppercase">
                     PUBLICATION · {String(i + 1).padStart(2, '0')}
                   </span>
-                  <ArrowUpRight size={14} className="text-text-tertiary dark:text-text-dark-tertiary group-hover:text-brand-green group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />
+                  {r.link && <ArrowUpRight size={14} className="text-text-tertiary dark:text-text-dark-tertiary group-hover:text-brand-green group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />}
                 </div>
 
                 <h3 className="text-lg font-bold text-text-primary dark:text-text-dark-primary mb-1 leading-snug group-hover:text-brand-green transition-colors duration-300">{r.title}</h3>
@@ -311,8 +323,9 @@ function App() {
                     <span key={t} className="px-2.5 py-1 text-[9px] font-bold tracking-widest uppercase text-brand-green bg-brand-green/5 rounded border border-brand-green/15">{t}</span>
                   ))}
                 </div>
-              </a>
-            ))}
+              </Wrapper>
+              );
+            })}
           </div>
         </section>
 
