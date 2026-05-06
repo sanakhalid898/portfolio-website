@@ -401,7 +401,7 @@ function App() {
               </p>
               
               <form 
-                action="https://formspree.io/f/xknadjyb" 
+                action="https://formspree.io/f/xzdogzjw" 
                 method="POST"
                 className="max-w-md mx-auto text-left space-y-4"
               >
