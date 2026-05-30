@@ -26,12 +26,12 @@ function App() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const skillIcons = { 
-    green: <Database size={24} />, 
-    blue: <BarChart3 size={24} />, 
-    purple: <BrainCircuit size={24} /> 
+  const skillIcons = {
+    green: <Database size={24} />,
+    blue: <BarChart3 size={24} />,
+    purple: <BrainCircuit size={24} />
   };
-  
+
   const skillColors = {
     green: {
       bg: 'bg-emerald-50 dark:bg-emerald-500/10', text: 'text-emerald-600 dark:text-emerald-400', border: 'border-emerald-200 dark:border-emerald-500/20',
@@ -101,11 +101,11 @@ function App() {
               I bridge the gap between data and decisions — building scalable systems, uncovering actionable insights, and deploying solutions that drive measurable impact across industries.
             </p>
             <div className="flex flex-wrap gap-3 items-center">
-              <div className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white dark:bg-zinc-900 shadow-sm border border-border-light dark:border-border-dark text-sm font-bold text-text-secondary dark:text-text-dark-secondary">
-                <span className="text-xs tracking-widest text-text-tertiary dark:text-text-dark-tertiary mr-1">STATUS</span>
-                <span className="w-2 h-2 rounded-full bg-brand-green animate-pulse-soft"></span>
-                OPEN TO WORK
-              </div>
+              {/* <div className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white dark:bg-zinc-900 shadow-sm border border-border-light dark:border-border-dark text-sm font-bold text-text-secondary dark:text-text-dark-secondary"> */}
+              {/* <span className="text-xs tracking-widest text-text-tertiary dark:text-text-dark-tertiary mr-1">STATUS</span> */}
+              {/* <span className="w-2 h-2 rounded-full bg-brand-green animate-pulse-soft"></span> */}
+              {/* OPEN TO WORK */}
+              {/* </div> */}
               <div className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white dark:bg-zinc-900 shadow-sm border border-border-light dark:border-border-dark text-sm font-bold text-text-secondary dark:text-text-dark-secondary">
                 <MapPin size={14} className="text-text-tertiary dark:text-text-dark-tertiary" /> NEW YORK, NY
               </div>
@@ -218,13 +218,13 @@ function App() {
         <section id="projects" className="py-16">
           <SectionHeader icon={<Terminal size={20} />} title="Featured Projects" />
           <div className="mt-12 flex flex-col md:flex-row gap-6 lg:gap-10 items-start">
-            
+
             <div className="w-full md:w-5/12 lg:w-1/3 flex flex-col gap-3 relative z-20">
               {projects.map((p, i) => {
                 const isActive = activeProject === i;
                 return (
-                  <div 
-                    key={i} 
+                  <div
+                    key={i}
                     onMouseEnter={() => setActiveProject(i)}
                     className={`cursor-pointer group flex items-center p-4 md:p-5 rounded-2xl border transition-all duration-300 relative ${isActive ? 'bg-white/90 dark:bg-[#131820] border-brand-green/30 shadow-md' : 'bg-white/40 dark:bg-transparent border-border-light dark:border-transparent hover:bg-white/60 dark:hover:bg-white/[0.02] hover:border-border-light dark:hover:border-border-dark'}`}
                   >
@@ -302,28 +302,28 @@ function App() {
               const Wrapper = r.link ? 'a' : 'div';
               const wrapperProps = r.link ? { href: r.link, target: '_blank', rel: 'noreferrer' } : {};
               return (
-              <Wrapper key={i} {...wrapperProps}
-                className="group relative flex flex-col bg-white dark:bg-[#0d1117] rounded-2xl border border-border-light dark:border-brand-green/15 p-6 hover:border-brand-green/40 hover:shadow-xl hover:shadow-brand-green/8 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
-                <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-brand-green/20 group-hover:bg-brand-green transition-colors duration-300 rounded-l-2xl"></div>
+                <Wrapper key={i} {...wrapperProps}
+                  className="group relative flex flex-col bg-white dark:bg-[#0d1117] rounded-2xl border border-border-light dark:border-brand-green/15 p-6 hover:border-brand-green/40 hover:shadow-xl hover:shadow-brand-green/8 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                  <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-brand-green/20 group-hover:bg-brand-green transition-colors duration-300 rounded-l-2xl"></div>
 
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-[9px] font-mono font-bold text-brand-green/70 tracking-[0.2em] uppercase">
-                    PUBLICATION · {String(i + 1).padStart(2, '0')}
-                  </span>
-                  {r.link && <ArrowUpRight size={14} className="text-text-tertiary dark:text-text-dark-tertiary group-hover:text-brand-green group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />}
-                </div>
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-[9px] font-mono font-bold text-brand-green/70 tracking-[0.2em] uppercase">
+                      PUBLICATION · {String(i + 1).padStart(2, '0')}
+                    </span>
+                    {r.link && <ArrowUpRight size={14} className="text-text-tertiary dark:text-text-dark-tertiary group-hover:text-brand-green group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />}
+                  </div>
 
-                <h3 className="text-lg font-bold text-text-primary dark:text-text-dark-primary mb-1 leading-snug group-hover:text-brand-green transition-colors duration-300">{r.title}</h3>
-                <p className="text-xs font-semibold text-brand-green/70 uppercase tracking-wider mb-3">{r.tagline}</p>
+                  <h3 className="text-lg font-bold text-text-primary dark:text-text-dark-primary mb-1 leading-snug group-hover:text-brand-green transition-colors duration-300">{r.title}</h3>
+                  <p className="text-xs font-semibold text-brand-green/70 uppercase tracking-wider mb-3">{r.tagline}</p>
 
-                <p className="text-sm text-text-secondary dark:text-text-dark-secondary leading-relaxed flex-1">{r.desc}</p>
+                  <p className="text-sm text-text-secondary dark:text-text-dark-secondary leading-relaxed flex-1">{r.desc}</p>
 
-                <div className="flex flex-wrap gap-1.5 mt-5 pt-4 border-t border-border-light dark:border-brand-green/10">
-                  {r.tags.map(t => (
-                    <span key={t} className="px-2.5 py-1 text-[9px] font-bold tracking-widest uppercase text-brand-green bg-brand-green/5 rounded border border-brand-green/15">{t}</span>
-                  ))}
-                </div>
-              </Wrapper>
+                  <div className="flex flex-wrap gap-1.5 mt-5 pt-4 border-t border-border-light dark:border-brand-green/10">
+                    {r.tags.map(t => (
+                      <span key={t} className="px-2.5 py-1 text-[9px] font-bold tracking-widest uppercase text-brand-green bg-brand-green/5 rounded border border-brand-green/15">{t}</span>
+                    ))}
+                  </div>
+                </Wrapper>
               );
             })}
           </div>
@@ -366,11 +366,11 @@ function App() {
             {education.map((ed, i) => (
               <div key={i} className="group relative bg-white dark:bg-[#0a0f16] rounded-xl border-2 border-gray-200 dark:border-[#1a222f] shadow-lg hover:shadow-[0_15px_40px_rgba(0,230,118,0.1)] hover:border-brand-green/50 transition-all duration-500 flex flex-col justify-between overflow-hidden">
                 <div className="h-6 bg-gray-100 dark:bg-[#131820] border-b-2 border-gray-200 dark:border-[#1a222f] flex justify-center items-center relative">
-                   <div className="w-16 h-2 rounded-full bg-gray-300 dark:bg-[#080c13] shadow-inner"></div>
+                  <div className="w-16 h-2 rounded-full bg-gray-300 dark:bg-[#080c13] shadow-inner"></div>
                 </div>
                 <div className="p-8 relative">
                   <div className="absolute right-4 top-4 w-24 h-24 border-[4px] border-brand-green/5 rounded-full flex items-center justify-center opacity-50 group-hover:opacity-100 group-hover:rotate-12 transition-all duration-700 pointer-events-none">
-                     <GraduationCap size={40} className="text-brand-green/10" />
+                    <GraduationCap size={40} className="text-brand-green/10" />
                   </div>
                   <div className="relative z-10">
                     <p className="text-[10px] font-mono text-brand-green tracking-widest uppercase mb-1">ID: ALUMNI-{new Date().getFullYear()}-{i}00</p>
@@ -380,15 +380,15 @@ function App() {
                       <h4 className="text-sm font-mono font-bold text-text-secondary dark:text-gray-300">{ed.degree}</h4>
                     </div>
                     <div className="flex items-center text-xs font-mono font-semibold text-text-tertiary dark:text-text-dark-tertiary">
-                      <MapPin size={14} className="mr-2 text-brand-green" /> {ed.location} 
-                      <span className="mx-3 text-border-light dark:text-[#1a222f]">|</span> 
+                      <MapPin size={14} className="mr-2 text-brand-green" /> {ed.location}
+                      <span className="mx-3 text-border-light dark:text-[#1a222f]">|</span>
                       <span className="text-brand-green">{ed.year}</span>
                     </div>
                   </div>
                 </div>
                 <div className="h-16 px-8 bg-gray-50 dark:bg-[#080c13] border-t-2 border-gray-200 dark:border-[#1a222f] flex items-center justify-between">
                   <div className="flex items-center h-8 gap-[3px] opacity-40 dark:opacity-60">
-                    {[1,2,1,4,1,1,3,2,1,1,2,5,1,2,1,3,2,1,4,1].map((w, idx) => (
+                    {[1, 2, 1, 4, 1, 1, 3, 2, 1, 1, 2, 5, 1, 2, 1, 3, 2, 1, 4, 1].map((w, idx) => (
                       <div key={idx} className="bg-text-primary dark:bg-brand-green h-full" style={{ width: `${w * 2}px` }}></div>
                     ))}
                   </div>
@@ -400,21 +400,21 @@ function App() {
             ))}
           </div>
         </section>
-        
+
         {/* === CONTACT === */}
         <section id="contact" className="py-20 mb-10">
           <div className="relative rounded-3xl border border-border-light dark:border-brand-green/30 bg-white dark:bg-[#0d1117] overflow-hidden p-8 md:p-12 text-center">
             <div className="absolute inset-0 bg-gradient-to-br from-brand-green/5 to-transparent pointer-events-none"></div>
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-brand-green/20 blur-[100px] pointer-events-none"></div>
-            
+
             <div className="relative z-10 max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-text-primary dark:text-text-dark-primary mb-6">Let's Connect</h2>
               <p className="text-lg text-text-secondary dark:text-text-dark-secondary mb-10">
                 Have a project in mind or just want to chat? I'm always open to discussing new opportunities and collaborations.
               </p>
-              
-              <form 
-                action="https://formspree.io/f/xzdogzjw" 
+
+              <form
+                action="https://formspree.io/f/xzdogzjw"
                 method="POST"
                 className="max-w-md mx-auto text-left space-y-4"
               >
